@@ -7,9 +7,7 @@ const Navbar = (props) => {
                 <h1>{props.title} Components</h1>
             </div>
             <ul className="menu-list">
-                <li><a href="#">Home Page</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Contact</a></li>
+                {props.menuList.map((item) => {return <li><a href="#">{item.name}</a></li>})}
             </ul>
         </div>
     );

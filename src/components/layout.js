@@ -6,9 +6,9 @@ import Footer from './footer'
 export default function Layout(props) {
     return (
         <div>
-            <Navbar />
+            <Navbar title={props.title} menuList={props.menuList}/>
             <SubNavbar/>
-            
+
             <div>
                 {props.children}
             </div>
